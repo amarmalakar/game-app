@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@repo/types": "workspace:*",
     "socket.io": "^4.8.1"
   },
   "devDependencies": {
