@@ -9,9 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@repo/types": "workspace:*",
     "@radix-ui/react-slot": "^1.1.1",
+    "@repo/types": "workspace:*",
     "@repo/ui": "workspace:*",
+    "@tanstack/react-query": "^5.63.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.469.0",
@@ -20,7 +21,9 @@
     "react-dom": "^18",
     "socket.io-client": "^4.8.1",
     "tailwind-merge": "^2.6.0",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "viem": "2.x",
+    "wagmi": "^2.14.7"
   },
   "devDependencies": {
     "@types/node": "^20",

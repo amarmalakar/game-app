@@ -1,3 +1,5 @@
+import { WalletOptions } from "@/components/common/wallet-options";
+import { Web3Account } from "@/components/common/web3-account";
 import { ITestType } from "@repo/types";
 
 const test: ITestType = {
@@ -13,7 +15,11 @@ export default function Home() {
   console.log(test)
   return (
     <div className="">
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic veritatis dolorem tempore ea sequi ad aperiam illum corporis unde minima ipsa, nam reiciendis culpa architecto odit ipsum iure adipisci cumque.</p>
+      <Web3Account />
+      <br />
+      <hr />
+      <br />
+      <WalletOptions />
     </div>
   );
 }
