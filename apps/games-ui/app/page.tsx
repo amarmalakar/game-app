@@ -22,7 +22,6 @@ export default function Home() {
       <WalletOptions /> */}
 
       <div className="grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-4 max-w-6xl m-auto">
-        {/* {[...Array(5)].map((_, idx) => <GameCard key={idx} />)} */}
         {gameList.map((game, idx) => (
           <GameCard game={game} key={idx} />
         ))}

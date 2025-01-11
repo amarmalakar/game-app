@@ -65,7 +65,7 @@ export default function WalletConnection() {
     </DropdownMenu>
   ) : (
     <AlertDialog>
-      <AlertDialogTrigger>
+      <AlertDialogTrigger asChild>
         <Button>Connect wallet</Button>
       </AlertDialogTrigger>
       <AlertDialogContent>
