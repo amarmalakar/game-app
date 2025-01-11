@@ -76,3 +76,19 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+/*=========================================
+============== CUSTOM CSS =================
+=========================================*/
+
+.background-game-card {
+  transition: transform 0.2s ease, opacity 0.3s;
+}
+@keyframes tileAnimation {
+  0% {
+    background-position: -100px 100px;
+  }
+  100% {
+    background-position: 100px -100px;
+  }
+}

@@ -4,7 +4,7 @@ import config from "./config";
 
 const httpServer = createServer();
 const io = new Server(httpServer, config.socketOptions);
-const PORT = 3333;
+const PORT = 3344;
 
 io.on("connection", (socket) => {
     console.log("SOCKET CONNECTED!!");

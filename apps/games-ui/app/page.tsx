@@ -1,19 +1,31 @@
+import GameCard from "@/components/common/game-card";
+import { gameList } from "@/constants";
 import { ITestType } from "@repo/types";
 
 const test: ITestType = {
-  address:  "",
+  address: "",
   age: 0,
   email: "",
   id: 0,
   name: "",
-  phone: ""
-}
+  phone: "",
+};
 
 export default function Home() {
-  console.log(test)
+  console.log(test);
   return (
-    <div className="">
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic veritatis dolorem tempore ea sequi ad aperiam illum corporis unde minima ipsa, nam reiciendis culpa architecto odit ipsum iure adipisci cumque.</p>
+    <div className="p-4">
+      {/* <Web3Account />
+      <br />
+      <hr />
+      <br />
+      <WalletOptions /> */}
+
+      <div className="grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-4 max-w-6xl m-auto">
+        {gameList.map((game, idx) => (
+          <GameCard game={game} key={idx} />
+        ))}
+      </div>
     </div>
   );
 }
