@@ -18,7 +18,7 @@ export default function SocketProvider({ children }: SocketProviderProps) {
   const [isConnected, setIsConnected] = useState(false);
 
   useEffect(() => {
-    const socketInstance = io("localhost:3333");
+    const socketInstance = io("localhost:3344");
     setSocket(socketInstance);
     
     socketInstance.on("connect", () => {

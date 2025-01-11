@@ -1,25 +1,32 @@
-import { WalletOptions } from "@/components/common/wallet-options";
-import { Web3Account } from "@/components/common/web3-account";
+import GameCard from "@/components/common/game-card";
+import { gameList } from "@/constants";
 import { ITestType } from "@repo/types";
 
 const test: ITestType = {
-  address:  "",
+  address: "",
   age: 0,
   email: "",
   id: 0,
   name: "",
-  phone: ""
-}
+  phone: "",
+};
 
 export default function Home() {
-  console.log(test)
+  console.log(test);
   return (
-    <div className="">
-      <Web3Account />
+    <div className="p-4">
+      {/* <Web3Account />
       <br />
       <hr />
       <br />
-      <WalletOptions />
+      <WalletOptions /> */}
+
+      <div className="grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-4 max-w-6xl m-auto">
+        {/* {[...Array(5)].map((_, idx) => <GameCard key={idx} />)} */}
+        {gameList.map((game, idx) => (
+          <GameCard game={game} key={idx} />
+        ))}
+      </div>
     </div>
   );
 }
